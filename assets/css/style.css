@@ -1,0 +1,1026 @@
+html {
+  margin: 0;
+  height: 100%;
+  padding: 0 !important;
+}
+
+/*div shadow: http://i.imgur.com/0gMD2Jz.png*/
+
+input, textarea, select, a { outline: none; }
+ 
+
+body {
+  margin: 0;
+    height: 100%;
+    background-color: black;
+}
+
+/*scrollbar stuff*/
+
+::-webkit-scrollbar {
+    width: 0.2%;
+    height: 70%;
+    margin: 0 auto;
+  background-color: rgba(255, 0, 0, 0.1);
+   
+}
+::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    background-clip: padding-box;
+    -webkit-border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    height: 6px;
+/*    border: 1px solid red;*/
+    background-clip: padding-box;
+    -webkit-border-radius: 15px;
+/*    background-color: rgba(0, 0, 0, 0.9);*/
+    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+   }
+
+.MainBanner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: white;
+    background:   url(a1.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-blend-mode:darken;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.SecondaryBanner{
+  width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+body {
+  background: black;
+}
+
+/*HEADER*/
+
+.reveal {
+  width: 33%;
+  height: 100%;
+  margin: 0.15%;
+  float: left;
+  position: relative;
+}
+.reveal-top, .reveal-bottom {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+}
+.reveal-top {
+  top: 0;
+}
+.reveal:hover .reveal-top{
+  top: -25%;
+}
+.reveal-bottom {
+  top: 50%;
+  background-position: 0 -330px;
+}
+.reveal:hover .reveal-bottom{
+  top: 60%;
+}
+.reveal-top, .reveal-bottom{
+  -webkit-transition: top 0.3s ease;
+  -moz-transition: top 0.3s ease;
+  -o-transition: top 0.3s ease;
+  -ms-transition: top 0.3s ease;
+  transition: top 0.3s ease;
+}
+.reveal p {
+  font: 45px/500px 'Amita', cursive;
+  text-align: center;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.reveal:hover p {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  opacity: 1;
+  cursor: pointer;
+}
+.tv {
+  background-color: white;
+}
+.tv .reveal-top, .tv .reveal-bottom {
+  background-image: url(b.jpg);
+  background-position: cover;
+  background-repeat: no-repeat;
+}
+.movies {
+  background-color: #e0d7e2;
+}
+.movies .reveal-top, .movies .reveal-bottom {
+  background-image: url(c.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+.books {
+  background-color: #f1edf2;
+}
+.books .reveal-top, .books .reveal-bottom {
+  background-image: url(d.jpg);
+  background-repeat: no-repeat;
+  background-position: cover;
+}
+.Top_Hidden_Spacer{
+  width: 100%;
+    height: 1%;
+    background-color: white;
+   
+}
+
+.Main_Title {
+  font-size: 7vw;
+    font-family: "Cinzel";
+    letter-spacing: 1.5vw;
+    width: 100%;
+    height: 19%;
+    color: white;
+    top: 23%;
+    left: 23%;
+    text-align: center;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    position: absolute;
+    display: inline-block;
+    z-index: 100;
+    transition: 500ms;
+}
+
+.Logo_Title {
+    font-size: 1.8vw;
+    font-family: 'Amita', cursive;
+/*    background-color: rgba(0,0,0,.35);*/
+    letter-spacing: 0.5vw;
+    width: 100%;
+    word-spacing: 1vw;
+    height: 10%;
+    color: white;
+    top: 49%;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 0%;
+    padding-top: 0.4%;
+    padding-left: 25%;
+    position: absolute;
+    display: inline-block;
+    z-index: 100;
+    transition: 500ms;
+}
+
+.Logo_Title_TeamMate {
+    font-size: 1.2vw;
+    font-family: "Cinzel";
+    background-color: rgba(0,0,0,1);
+    letter-spacing: 1.2vw;
+    width: 100%;
+    word-spacing: 1vw;
+    height: 4%;
+    color: white;
+    top: 49%;
+    text-align: center;
+    padding-bottom: 0%;
+    padding-top: 0.4%;
+    position: absolute;
+    display: inline-block;
+    z-index: 100;
+    transition: 500ms;
+}
+
+.Logo_Title_Socialise {
+    font-size: 1.2vw;
+    font-family: "Cinzel";
+    background-color: rgba(0,0,0,1);
+    letter-spacing: 1.2vw;
+    width: 100%;
+    word-spacing: 1vw;
+    height: 4%;
+    color: white;
+    top: 33%;
+    text-align: center;
+    padding-bottom: 0%;
+    padding-top: 0.4%;
+    position: absolute;
+    display: inline-block;
+    z-index: 100;
+    transition: 500ms;
+}
+
+.Logo_Title_Interests {
+    font-size: 1.2vw;
+    font-family: "Cinzel";
+    background-color: rgba(0,0,0,1);
+    letter-spacing: 1.2vw;
+    width: 100%;
+    word-spacing: 1vw;
+    height: 4%;
+    color: white;
+    top: 53%;
+    text-align: center;
+    padding-bottom: 0%;
+    padding-top: 0.4%;
+    position: absolute;
+    display: inline-block;
+    z-index: 100;
+    transition: 500ms;
+}
+
+.Header{
+    width: 100%;
+    height: 6%;
+    position: fixed;
+    background-color: black;
+    overflow: hidden;
+    z-index: 101;
+}
+
+.LogIn {
+    z-index: 101;
+    font-weight: bold;
+    left: 8%;
+    top: 1.2%;
+    position: fixed;
+    display: inline-block;
+    color: white;
+    font-size: 1vw;
+    font-family: "Cinzel";
+    width: 5%;
+    padding: 0.2%;
+    transition: 200ms;
+}
+
+.SignUp {
+    z-index: 101;
+    font-weight: bold;
+    top: 1.2%;
+    left: 1%;
+    position: fixed;
+    display: inline-block;
+    color: white;
+    font-size: 1vw;
+    font-family: "Cinzel";
+    width: 5%;
+    padding: 0.2%;
+    padding-right: 0.5%;
+    transition: 200ms;
+}
+
+.HourglassLogo{
+    z-index: 101;
+    font-weight: bold;
+    top: 1.2%;
+    left: 92%;
+    position: fixed;
+    display: inline-block;
+    color: white;
+    font-size: 1vw;
+    font-family: "Cinzel";
+    width: 5%;
+    padding: 0.2%;
+    padding-right: 0.5%;
+    transition: 200ms;  
+}
+
+.DividerBar{
+    z-index: 101;
+    top: 1.2%;
+    left: 6.5%;
+    position: fixed;
+    display: inline-block;
+    width: 0.1%;
+    height: 3%;
+    background-color: white;
+}
+
+.SignUp:hover, .LogIn:hover {
+  cursor: pointer;
+  color: red;
+  font-weight: bolder;
+  transition: 200ms;
+}
+
+
+/*LOGIN ELEMENT BLOCK*/
+
+.LOG_IN_MASTER_CONTAINER{
+  position: fixed;
+    top: -40%;
+    left: 38%;
+    background-color: black;
+    z-index: 101;
+    width: 25%;
+    height: 30%;
+    display: block;
+    border-top: 1vw solid darkred;
+}
+
+.Login_Form {
+    position: relative;
+    top: 5%;
+    left: -2%;
+    width: 100%;
+    height: 80%;
+    display: block;
+}
+
+.Text_Field_Container{
+    position: relative;
+    width: 100%;
+    height: 66%;
+    top: 6%;
+    display: inline-block;
+}
+
+.LOGIN_NAME{
+  padding: 1%;
+    padding-left: 3%;
+    width: 86%;
+    background-color: beige;
+    color: black;
+    font-family: "Cinzel";
+    font-size: 1vw;
+    height: 30%;
+    left: 7%;
+    position: relative;
+    top: 10%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.Password{
+    padding: 1%;
+    padding-left: 3%;
+    width: 86%;
+    background-color: beige;
+    color: black;
+    font-family: "Cinzel";
+    font-size: 1vw;
+    height: 30%;
+    left: 7%;
+    position: relative;
+    top: 27%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.Button_Container{
+    position: relative;
+    width: 100%;
+    height: 31%;
+    top: 19%;
+    display: inline-block;
+}
+
+.Cancel_Login{
+  width: 20%;
+    background-color: black;
+    color: white;
+    font-family: "Cinzel";
+    font-size: 1vw;
+    height: 80%;
+    margin-left: 26%;
+    border: 1px solid black;
+    font-weight: 300;
+}
+
+.LOGIN_Submit{
+    width: 20%;
+    background-color: black;
+    color: white;
+    font-family: "Cinzel";
+    font-size: 1vw;
+    height: 80%;
+    margin-left: 7%;
+    border: 1px solid black;
+    font-weight: 300;
+}
+
+.LOGIN_NAME:hover, .Password:hover, .Cancel_Login:hover, .LOGIN_Submit:hover {
+  border: 1px solid white;
+}
+
+
+/*SIGNUP BLOCK ELEMENT*/
+
+.SIGNUP_MASTER_CONTAINER {
+  position: fixed;
+    top: -60%;
+    left: 38%;
+    background-color: black;
+    z-index: 101;
+    width: 27%;
+    height: 55%;
+    display: block;
+    border-top: 1vw solid darkred;
+}
+
+.SIGNUP_Text_Field_Container{
+    position: relative;
+    width: 100%;
+    height: 69%;
+    top: 6%;
+    display: inline-block;
+}
+
+.SignUP_USERNAME{
+    padding: 1%;
+    padding-left: 3%;
+    width: 86%;
+    background-color: beige;
+    color: black;
+    font-family: "Cinzel";
+    font-size: 1vw;
+    height: 17%;
+    left: 5%;
+    position: relative;
+    top: 3%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.SignUP_Email{
+  padding: 1%;
+    padding-left: 3%;
+    width: 86%;
+    background-color: beige;
+    color: black;
+    font-family: "Cinzel";
+    font-size: 1vw;
+    height: 17%;
+    left: 5%;
+    position: relative;
+    top: 10%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.SignUP_Password{
+    padding: 1%;
+    padding-left: 3%;
+    width: 86%;
+    background-color: beige;
+    color: black;
+    font-family: "Cinzel";
+    font-size: 1vw;
+    height: 17%;
+    left: 5%;
+    position: relative;
+    top: 18%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 900;
+
+}
+
+.ReEnter_SignUP_Password{
+  padding: 1%;
+    padding-left: 3%;
+    width: 86%;
+    background-color: beige;
+    color: black;
+    font-family: "Cinzel";
+    font-size: 1vw;
+    height: 17%;
+    left: 5%;
+    position: relative;
+    top: 25%;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: 900;
+}
+
+.SIGNUP_Button_Container{
+  position: relative;
+    width: 100%;
+    height: 20%;
+    top: 16%;
+    display: inline-block;
+}
+
+.Cancel_Signup{
+  width: 20%;
+    background-color: black;
+    color: white;
+    font-family: "Cinzel";
+    font-size: 1vw;
+    height: 50%;
+    margin-left: 26%;
+    border: 1px solid black;
+    font-weight: 300;
+}
+
+.Signup_Submit{
+    width: 20%;
+    background-color: black;
+    color: white;
+    font-family: "Cinzel";
+    font-size: 1vw;
+    height: 50%;
+    margin-left: 7%;
+    border: 1px solid black;
+    font-weight: 300;
+}
+
+.SignUP_USERNAME:hover, .SignUP_Email:hover, .SignUP_Password:hover, .ReEnter_SignUP_Password:hover, .Cancel_Signup:hover,.Signup_Submit:hover  {
+  border: 1px solid white;
+}
+
+.Cancel_Signup:hover, .Signup_Submit:hover {
+  cursor:pointer;
+}
+
+.TeamBanner {
+  top: 1.5%;
+  width: 100%;
+    height: 90%;
+    position: relative;
+    background:   url(http://i.imgur.com/ERKQFie.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-blend-mode:darken;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.TeamBanner1_Trigger{
+    top: 3.5%;
+    width: 2%;
+    left: 0%;
+    height: 42%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+    transition: 200ms;
+}
+
+.fa-chevron-left{
+  color: white;
+    transform: scale(2,2);
+    position: absolute;
+    top: 50%;
+    left: 45%;
+}
+
+.fa-chevron-right{
+    color: white;
+    transform: scale(2,2);
+    position: absolute;
+    top: 46%;
+    left: 25%;
+}
+
+.TeamBanner2_Trigger{
+    top: 55.5%;
+    width: 2%;
+    left: 98%;
+    height: 43%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+    transition: 200ms;
+}
+
+.TeamBanner1_Trigger:hover, .TeamBanner2_Trigger:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .6);
+  transition: 200ms;
+}
+
+.TeamBanner_Description_Master1{
+    top: 3.5%;
+    width: 44%;
+    left: 2%;
+    height: 42%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.TeamDescription_close{
+  top: 6%;
+    left: 94.5%;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    transition: 400ms;
+}
+
+.TeamDescription_close:hover, .TeamDescription2_close:hover{
+  cursor: pointer;
+  color: black;
+  transition: 400ms;
+}
+
+.fa-close {
+  transform: scale(2,2);
+  display: inline-block;
+}
+
+.TeamMate_Title1{
+    font-size: 2vw;
+    top: 3%;
+    left: 2.5%;
+    color: white;
+    font-family: "Alegreya";
+    display: inline-block;
+    position: absolute;
+    border-bottom: 1px solid white;
+    transition: 400ms;
+}
+
+.TeamMate_Paragraph1 {
+    width: 96%;
+    font-size: 1.3vw;
+    top: 23%;
+    left: 2.5%;
+    text-align: left;
+    color: white;
+    font-family: "Alegreya";
+    display: inline-block;
+    position: absolute;
+    transition: 400ms;
+}
+
+.TeamBanner_Description_Master2{
+    top: 55.5%;
+    width: 37%;
+    left: 61%;
+    height: 43%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.TeamDescription2_close{
+  top: 6%;
+    left: 94.5%;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    transition: 400ms;
+}
+
+.TeamMate_Title2{
+    font-size: 2vw;
+    top: 3%;
+    left: 2.5%;
+    color: white;
+    font-family: "Alegreya";
+    display: inline-block;
+    position: absolute;
+    border-bottom: 1px solid white;
+    transition: 400ms;
+}
+
+.TeamMate_Paragraph2 {
+    width: 96%;
+    font-size: 1.3vw;
+    top: 21%;
+    left: 2.5%;
+    text-align: left;
+    color: white;
+    font-family: "Alegreya";
+    display: inline-block;
+    position: absolute;
+    transition: 400ms;
+}
+
+
+.SocialiseBanner{
+  top: 3%;
+    width: 100%;
+    height: 90%;
+    position: relative;
+    background: url(http://i.imgur.com/UkjZrkb.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.SocialiseBanner2_Trigger{
+    top: 44.5%;
+    width: 2%;
+    left: 98%;
+    height: 49%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+    transition: 200ms;
+}
+
+.SocialiseBanner2_Trigger:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .6);
+  transition: 200ms;
+}
+
+
+.SocialiseDescription2_close:hover{
+  cursor: pointer;
+  color: black;
+  transition: 400ms;
+}
+
+
+.SocialiseBanner_Description_Master2{
+    top: 44.5%;
+    width: 41%;
+    left: 57%;
+    height: 49%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.SocialiseDescription2_close{
+  top: 6%;
+    left: 94.5%;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    transition: 400ms;
+}
+
+.SocialiseMate_Title2{
+    font-size: 2vw;
+    top: 3%;
+    left: 2.5%;
+    color: white;
+    font-family: "Alegreya";
+    display: inline-block;
+    position: absolute;
+    border-bottom: 1px solid white;
+    transition: 400ms;
+}
+
+.Socialise_Paragraph2 {
+    width: 96%;
+    font-size: 1.3vw;
+    top: 21%;
+    left: 2.5%;
+    text-align: left;
+    color: white;
+    font-family: "Alegreya";
+    display: inline-block;
+    position: absolute;
+    transition: 400ms;
+}
+
+.InterestsBanner{
+  top: 4%;
+    width: 100%;
+    height: 90%;
+    position: relative;
+    background: url(https://konilifestyle.files.wordpress.com/2013/12/gw009.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.InterestsBanner1_Trigger{
+  top: 2.5%;
+    width: 2%;
+    left: 98%;
+    height: 49%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+    transition: 200ms;
+}
+
+.InterestsBanner1_Trigger:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, .6);
+  transition: 200ms;
+}
+
+.InterestsBanner_Description_Master1{
+  top: 2.5%;
+    width: 51%;
+    left: 47%;
+    height: 49%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.InterestsDescription_close{
+  top: 6%;
+    left: 94.5%;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    transition: 400ms;
+}
+
+
+.InterestsDescription_close:hover{
+  cursor: pointer;
+  color: black;
+  transition: 400ms;
+}
+
+.Interests_Title1{
+    font-size: 2vw;
+    top: 3%;
+    left: 2.5%;
+    color: white;
+    font-family: "Alegreya";
+    display: inline-block;
+    position: absolute;
+    border-bottom: 1px solid white;
+    transition: 400ms;
+}
+
+.Interests_Paragraph1 {
+    width: 96%;
+    font-size: 1.3vw;
+    top: 20%;
+    left: 2.5%;
+    text-align: left;
+    color: white;
+    font-family: "Alegreya";
+    display: inline-block;
+    position: absolute;
+    transition: 400ms;
+}
+
+.Footer{
+  top: 4%;
+    width: 100%;
+    height: 20%;
+    position: relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+.TradeMark{
+    font-size: 1vw;
+    top: 81%;
+    left: 31%;
+    color: white;
+    font-family: "Cinzel";
+    display: inline-block;
+    position: relative;
+}
+
+.fa-twitter {
+  width: 1%;
+    height: 11%;
+    top: 38%;
+    left: 83%;
+    transform: scale(2,2);
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+
+.fa-facebook-square {
+  width: 1%;
+    height: 11%;
+    top: 38%;
+    left: 87%;
+    transform: scale(2,2);
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+
+.fa-youtube-play{
+  width: 1%;
+    height: 11%;
+    top: 38%;
+    left: 91%;
+    transform: scale(2,2);
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+
+.fa-reddit-alien {
+  width: 1%;
+    height: 11%;
+    top: 38%;
+    left: 95%;
+    transform: scale(2,2);
+    color: white;
+    position: absolute;
+    text-align: center;
+}
+
+.fa-twitter:hover ,.fa-facebook-square:hover,  .fa-youtube-play:hover, .fa-reddit-alien:hover {
+  cursor: pointer;
+  color: gray;
+}
+
+.Forums_{
+  font-size: 1vw;
+    top: 40%;
+    left: 15.1%;
+    color: white;
+    font-family: "Cinzel";
+    display: inline-block;
+    position: absolute;
+    transition: 200ms;
+}
+
+.divider1{
+    top: 40%;
+    left: 7.5%;
+    width: 0.1%;
+    height: 15%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+}
+
+.Contact_{
+    font-size: 1vw;
+    top: 41%;
+    left: 2%;
+    color: white;
+    font-family: "Cinzel";
+    display: inline-block;
+    position: absolute;
+    transition: 200ms;
+}
+
+.divider2{
+    top: 40%;
+    left: 14.2%;
+    width: 0.1%;
+    height: 15%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+}
+
+.AboutUs_{
+    font-size: 1vw;
+    top: 40%;
+    left: 8.5%;
+    color: white;
+    font-family: "Cinzel";
+    display: inline-block;
+    position: absolute;
+    transition: 200ms;
+}
+
+.divider3{
+    top: 40%;
+    left: 19.5%;
+    width: 0.1%;
+    height: 15%;
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+}
+
+.Support_{
+    font-size: 1vw;
+    top: 40%;
+    left: 20.5%;
+    color: white;
+    font-family: "Cinzel";
+    display: inline-block;
+    position: absolute;
+    transition: 200ms;
+}
+
+.Support_:hover, .Forums_:hover, .AboutUs_:hover, .Contact_:hover{
+  cursor: pointer;
+  transition: 200ms;
+  color: red;
+}
